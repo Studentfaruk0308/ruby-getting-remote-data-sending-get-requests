@@ -5,3 +5,19 @@ url = "https://learn-co-curriculum.github.io/json-site-example/"
 uri = URI.parse(url)
 uri.open.string
 
+Built-in Ruby Class
+require 'open-uri'
+require 'net/http'
+url = "https://learn-co-curriculum.github.io/json-site-example/"
+uri = URI.parse(url)
+
+require 'open-uri'
+require 'net/http'
+url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/locations.json"
+uri = URI.parse(url)
+response = Net::HTTP.get_response(uri)
+response.body
+
+
+
+
